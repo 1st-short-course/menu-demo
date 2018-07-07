@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="option menu"
+        android:id="@+id/optionmenu"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_more_vert_black_24dp">
+        <menu>
+            <item android:id="@+id/newTab"
+                android:title="New Tab"
+                android:icon="@drawable/new_tab"/>
+            <item android:id="@+id/recent"
+                android:title="recent"
+                android:icon="@drawable/ic_004_history"/>
+            <item android:id="@+id/download"
+                android:title="download"
+                android:icon="@drawable/ic_003_cloud_computing"/>
+            <item android:id="@+id/share"
+                android:title="share ..."
+                android:icon="@drawable/share">
+                <menu>
+                    <item android:icon="@drawable/facebook"
+                        android:title="facebook"
+                        android:id="@+id/facebook"/>
+                    <item android:icon="@drawable/instagram"
+                        android:title="instagram"
+                        android:id="@+id/instagram"/>
+                    <item android:icon="@drawable/twitter"
+                        android:title="twitter"
+                        android:id="@+id/twitter"/>
+                </menu>
+            </item>
+
+
+            <item android:id="@+id/find"
+                android:title="find in page"
+                android:icon="@drawable/find"/>
+        </menu>
+    </item>
+
+</menu>
